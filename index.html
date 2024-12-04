@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>CARRASQUILLA</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif; /* Fuente general */
+      background-color: #000; /* Fondo negro */
+      color: #FFD700; /* Texto dorado */
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #333; /* Color de fondo del encabezado */
+      color: #FFD700; /* Texto dorado */
+      padding: 20px;
+      text-align: center;
+    }
+    nav a {
+      color: #FFD700; /* Color dorado para los enlaces */
+      text-decoration: none; /* Sin subrayado */
+      transition: transform 0.3s; /* Transición suave para el zoom */
+      margin: 0 20px; /* Espaciado entre enlaces */
+    }
+    nav a:hover {
+      transform: scale(1.1); /* Zoom al pasar el cursor */
+    }
+    h2 {
+      margin-top: 20px;
+      color: #FFD700; /* Texto dorado */
+    }
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Diseño responsivo */
+      gap: 20px; /* Espaciado entre imágenes */
+      padding: 20px;
+      background-color: #111; /* Fondo oscuro para la galería */
+      justify-items: center; /* Centrar elementos en la cuadrícula */
+    }
+    .grid-item {
+      background-color: #222; /* Fondo gris oscuro para las imágenes */
+      border: 1px solid #FFD700; /* Borde dorado */
+      border-radius: 5px; /* Bordes redondeados */
+      padding: 10px;
+      text-align: center;
+    }
+    .video-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 20px 0;
+      background-color: #111; /* Fondo oscuro para videos */
+      padding: 10px;
+    }
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #333; /* Color de fondo del pie de página */
+      color: #FFD700; /* Texto dorado */
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>CARRASQUILLA, LUGAR DE EXITO</h1>
+    <p>Descubre la historia y características de nuestro barrio a través de imágenes y videos.</p>
+    <nav>
+      <a href="barrio_images.html">Galería de Imágenes</a>
+      <a href="barrio_videos.html">Galería de Videos</a>
+      <a href="barrio_historia.html">Historia del Barrio</a>
+      <a href="barrio_creditos.html">Créditos</a>
+    </nav>
+  </header>
+  <section class="info-barrio">
+<h2 style="text-align: center;">HISTORIA DEL BARRIO</h2>
+<h3 style="text-align: center;"><p>Carrasquilla se desarrolló principalmente a mediados del siglo XX, como parte del crecimiento urbano de la ciudad de Panamá. <br>Se considera que su formación se dio en la década de 1950.</br></p></h3>
+  </section>
+  <section class="gallery-videos">
+<h2 style="text-align: center;">VIAJE</h2>
+    <div class="video-container">
+      <video width="900" height="440" controls>
+        <source src="videos/remooo.mp4" type="video/mp4">
+      </video>
+      <p>SALTAMOS DEL REMON A CARRASQUILLA</p>
+    </div>
+  </section>
+
+<section class="gallery-images">
+    <h2 style="text-align: center;">ARTE CULTURAL</h2>
+    <div class="grid-container" style="display: flex; justify-content: center; flex-wrap: wrap; gap: 10px;">
+        <div class="grid-item" style="text-align: center;">
+            <img src="images/art1.jpg" alt="Descripción de la imagen 1" style="width: 400px; height: auto;">
+            <p>ESTE ES UNO DE LOS TANTOS GRIFITIS QUE PODEMOS ENCONTRAR AL REDEDOR DEL PARQUE OMAR</p>
+        </div>
+        <div class="grid-item" style="text-align: center;">
+            <img src="images/art2.jpg" alt="Descripción de la imagen 2" style="width: 400px; height: auto;">
+            <p>PINTURAS SEPARADAS PERSPECTIVAMENTE CON ESSTILO DE ANIMACION</p>
+        </div>
+        <div class="grid-item" style="text-align: center;">
+            <img src="images/art3.jpg" alt="Descripción de la imagen 3" style="width: 400px; height: auto;">
+            <p>LA OTRA PARTE DEL MURAL SOBRE EL ACUARIO</p>
+        </div>
+        <div class="grid-item" style="text-align: center;">
+            <img src="images/art4.jpg" alt="Descripción de la imagen 4" style="width: 400px; height: auto;">
+            <p>MEMORIAS PLASMADAS SOBRES PROFESORAS MUY IMPORTANTRS</p>
+        </div>
+    </div>
+</section>
+  <footer>
+    <p>Autor: ASIEL HIM | Fecha de creación: Diciembre 2024</p>
+  </footer>
+</body>
+</html>

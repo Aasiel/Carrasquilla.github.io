@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Galería de Imágenes del Barrio</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif; /* Fuente general */
+      background-color: #000; /* Fondo negro */
+      color: #FFD700; /* Texto dorado */
+      margin: 0;
+      padding: 0;
+      text-align: center; /* Centrar texto en todo el cuerpo */
+    }
+    
+    header {
+      background-color: #333; /* Fondo del encabezado */
+      color: #FFD700; /* Texto dorado en el encabezado */
+      padding: 20px;
+    }
+
+    nav {
+      margin-bottom: 20px; /* Espacio debajo de la navegación */
+    }
+
+    nav a {
+      color: #FFD700; /* Color dorado para los enlaces */
+      text-decoration: none; /* Sin subrayado */
+      transition: transform 0.3s; /* Transición suave para el zoom */
+      margin-right: 20px; /* Espaciado entre enlaces */
+    }
+
+    nav a:hover {
+      transform: scale(1.1); /* Zoom al pasar el cursor */
+    }
+
+    h1, h2 {
+      text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8); /* Sombra para los encabezados */
+      color: #FFD700; /* Texto dorado */
+    }
+
+    .grid-container {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Diseño responsivo */
+      gap: 10px;
+      padding: 20px;
+      background-color: #000; /* Fondo negro para la galería */
+      justify-items: center; /* Centrar elementos en la cuadrícula */
+    }
+
+    .grid-item {
+      margin: 10px; /* Espaciado entre imágenes */
+      text-align: center; /* Centrar texto de descripción */
+    }
+
+    footer {
+      text-align: center;
+      padding: 10px;
+      background-color: #333; /* Fondo del pie de página */
+      color: #FFD700; /* Texto dorado en el pie de página */
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Galería de Imágenes del Barrio</h1>
+    <p>Explora las imágenes que capturan la esencia de nuestro barrio.</p>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="barrio_videos.html">Galería de Videos</a>
+      <a href="barrio_historia.html">Historia del Barrio</a>
+      <a href="barrio_creditos.html">Créditos</a>
+    </nav>
+  </header>
+
+  <section class="gallery-images">
+    <h2>Galería de Imágenes</h2>
+    <div class="grid-container">
+      <div class="grid-item"><img src="images/ima1.jpg" alt="Descripción de la imagen 1"><p>PARTE TRASERA DE LA CASA</p></div>
+      <div class="grid-item"><img src="images/ima2.jpg" alt="Descripción de la imagen 2"><p>CAMINO HACIA EL PARQUE OMAR</p></div>
+      <div class="grid-item"><img src="images/ima3.jpg" alt="Descripción de la imagen 3"><p>SUPER "SIEMPRE" PEQUEÑO LOCAL DE VÍVERES</p></div>
+      <div class="grid-item"><img src="images/ima4.jpg" alt="Descripción de la imagen 1"><p>AUTO REPUESTO DE CUALQUIER MARCA DE AUTOS</p></div>
+      <div class="grid-item"><img src="images/ima5.jpg" alt="Descripción de la imagen 2"><p>PEQUEÑA PLAZA DENTRO DEL BARRIO</p></div>
+      <div class="grid-item"><img src="images/ima6.jpg" alt="Descripción de la imagen 3"><p>PH SAN ROGUE CERCA DE LA PEQUEÑA PLAZA</p></div>
+      <div class="grid-item"><img src="images/ima7.jpg" alt="Descripción de la imagen 1"><p>IGLESIA CATOLICA, CERCA DEL ESPIRITU DE DIOS</p></div>
+      <div class="grid-item"><img src="images/ima8.jpg" alt="Descripción de la imagen 2"><p>DOS VEHÍCULOS CERCA DE LA IGLESIA</p></div>
+      <div class="grid-item"><img src="images/ima9.jpg" alt="Descripción de la imagen 3"><p>CHINO JUNTO A OTRO PH</p></div>
+      <div class="grid-item"><img src="images/ima10.jpg" alt="Descripción de la imagen 1"><p>PH PLAZA MADRID, PEQUEÑO PERO AGRADABLE</p></div>
+      <div class="grid-item"><img src="images/ima11.jpg" alt="Descripción de la imagen 2"><p>MOTEL, LA VICTORIA, MAS BIEN ES UN PUSH</p></div>
+      <div class="grid-item"><img src="images/ima12.jpg" alt="Descripción de la imagen 3"><p>SEÑOR QUE VENDE HOT DOGS JUNTO AL CHINO</p></div>
+      <div class="grid-item"><img src="images/ima13.jpg" alt="Descripción de la imagen 1"><p>ECONO SUPER, UN LUGAR MAS GRANDE QUE EL SIEMPRE, CON PRECIOS MAS ECONOMICOS</p></div>
+      <div class="grid-item"><img src="images/ima14.jpg" alt="Descripción de la imagen 2"><p>ENTRADA DE NOCHE DE LA CASA DEL BARRIO</p></div>
+      <div class="grid-item"><img src="images/ima15.jpg" alt="Descripción de la imagen 3"><p>VISTA EN GENERAL DEL AMBIENTE DE NOCHE</p></div>
+    </div>
+  </section>
+
+  <footer>
+    <p>Autor: ASIEL HIM | Fecha de creación: Diciembre 2024</p>
+  </footer>
+</body>
+</html>
